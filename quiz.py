@@ -1,5 +1,5 @@
 def question(question, correct_answer):
-    answer = input(question)
+    answer = input(f"{question}\n")
     if answer == correct_answer:
         return 1
     else:
@@ -8,17 +8,18 @@ def question(question, correct_answer):
 def main():
 
     boolean = input("Do you want to play the quiz (Yes/No): ")
-    questions = []
-    answers = []
+    questions = ["Testi"]
+    answers = ["Kyllä"]
+    sum = 0
 
     if boolean == "Yes":
         i = 0
-        sum = 0
         while boolean == "Yes":
             sum = sum + question(questions[i], answers[i])
-        if i == len(questions):
-            boolean = "No"
+            i = i+1
+            if i == len(questions):
+                boolean = "No"
 
-    print("Final points: ", sum)
+    print("Final points:", sum)
 
 main()
