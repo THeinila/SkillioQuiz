@@ -8,8 +8,8 @@ def question(question, correct_answer):
 def main():
 
     boolean = input("Do you want to play the quiz (Yes/No): ")
-    questions = ["Testi"]
-    answers = ["Kyllä"]
+    questions = ["Testi1", "Testi2"]
+    answers = ["Kyllä", "Ei"]
     sum = 0
 
     if boolean == "Yes":
