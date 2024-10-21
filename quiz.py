@@ -8,7 +8,7 @@ def question(question, correct_answer):
 def main():
 
     boolean = input("Do you want to play the quiz (Yes/No): ")
-    questions = ["Testi1", "Testi2"]
+    questions = ["Onko tänään maanantai", "Onko kala hyönteinen?"]
     answers = ["Kyllä", "Ei"]
     sum = 0
 
